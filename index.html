@@ -4,37 +4,42 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Aplica: Warehouse Associate – Paneles Solares | Nashville, TN</title>
-  <meta name="description" content="Aplica para Warehouse Associate / Warehouse Worker en un warehouse de paneles solares en Nashville, TN. Contratación activa. Formulario rápido con validación + email listo para enviar." />
+  <title>Apply — Warehouse Associate (Solar Panels) | Nashville, TN</title>
+  <meta name="description" content="Apply for Warehouse Associate / Warehouse Worker at a solar panel warehouse in Nashville, TN. Clean form with validation, email generator, and copy application." />
 
   <!-- OpenGraph (no external images) -->
-  <meta property="og:title" content="Aplica: Warehouse Associate – Paneles Solares | Nashville, TN" />
-  <meta property="og:description" content="Trabajo físico, estable y con oportunidad de crecimiento. Envía tu solicitud por email en 1 minuto." />
+  <meta property="og:title" content="Warehouse Associate — Solar Panels | Nashville, TN" />
+  <meta property="og:description" content="Stable physical work with growth opportunity. Apply fast. Generate email and copy application." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
 
-  <meta name="theme-color" content="#070a12" />
+  <meta name="theme-color" content="#0b1220" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#apply">Saltar al formulario / Skip to application</a>
+  <a class="skip" href="#apply" data-i18n="skip">Saltar al formulario</a>
 
   <header class="header">
-    <div class="container header-inner">
-      <div class="brand" aria-label="Solar Panel Warehouse">
+    <div class="wrap header-row">
+      <div class="brand">
         <div class="mark" aria-hidden="true">SP</div>
         <div class="brand-text">
-          <div class="brand-name">Solar Panel Warehouse</div>
-          <div class="brand-sub">Nashville, Tennessee</div>
+          <div class="brand-title">Solar Panel Warehouse</div>
+          <div class="brand-sub">Nashville, TN</div>
         </div>
       </div>
 
-      <div class="header-right">
-        <div class="pill" role="status" aria-label="Contratación activa">
-          <span class="dot" aria-hidden="true"></span>
-          <span class="pill-es">Contratación activa</span>
-          <span class="pill-en">Now hiring</span>
+      <div class="header-actions">
+        <div class="status" role="status" aria-label="Now hiring">
+          <span class="pulse" aria-hidden="true"></span>
+          <span data-i18n="nowHiring">Contratación activa</span>
+        </div>
+
+        <!-- Not floating. Clean segmented control. -->
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
         </div>
       </div>
     </div>
@@ -43,112 +48,86 @@
   <main>
     <!-- HERO -->
     <section class="hero" id="top">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-left">
-            <div class="eyebrow">
-              <span class="eyebrow-es">Puesto</span>
-              <span class="eyebrow-val-es">Asociado de Almacén – Paneles Solares</span>
-              <span class="eyebrow-en">Warehouse Associate – Solar Panels</span>
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <div class="pill">
+              <span class="pill-k" data-i18n="roleLabel">Puesto</span>
+              <span class="pill-v" data-i18n="roleValue">Asociado de Almacén — Paneles Solares</span>
             </div>
 
-            <h1 class="h1">
+            <h1 class="h1" data-i18n="heroTitle">
               Aplica para trabajar en nuestro warehouse de paneles solares
-              <span class="h1-en">Apply to work at our solar panel warehouse</span>
             </h1>
 
-            <p class="lead">
+            <p class="lead" data-i18n="heroSubtitle">
               Trabajo físico, estable y con oportunidad de crecimiento.
-              <span class="lead-en">Physical, stable work with opportunity to grow.</span>
             </p>
 
-            <div class="cta">
-              <a class="btn btn-primary" href="#apply">
-                Aplicar ahora
-                <span class="btn-en">Apply now</span>
-              </a>
-              <a class="btn btn-ghost" href="#requirements">
-                Ver requisitos
-                <span class="btn-en">View requirements</span>
-              </a>
+            <div class="facts" aria-label="Job details">
+              <div class="fact">
+                <div class="fact-k" data-i18n="locationLabel">Ubicación</div>
+                <div class="fact-v">Nashville, TN</div>
+              </div>
+
+              <div class="fact">
+                <div class="fact-k" data-i18n="scheduleLabel">Horario</div>
+                <div class="fact-v">
+                  <span data-i18n="scheduleValue">Tiempo completo</span>
+                  <span class="fact-sub" data-i18n="scheduleSub">Turnos disponibles</span>
+                </div>
+              </div>
+
+              <div class="fact">
+                <div class="fact-k" data-i18n="payLabel">Pago</div>
+                <div class="fact-v" data-i18n="payValue">Según experiencia</div>
+              </div>
+
+              <div class="fact">
+                <div class="fact-k" data-i18n="startLabel">Inicio</div>
+                <div class="fact-v" data-i18n="startValue">Inmediato</div>
+              </div>
             </div>
 
-            <div class="trust">
-              <div class="trust-item">
-                <span class="trust-es">Proceso rápido</span>
-                <span class="trust-en">Fast process</span>
-              </div>
-              <div class="trust-item">
-                <span class="trust-es">Diseño móvil</span>
-                <span class="trust-en">Mobile-first</span>
-              </div>
-              <div class="trust-item">
-                <span class="trust-es">Sin cuentas</span>
-                <span class="trust-en">No accounts</span>
-              </div>
+            <div class="cta">
+              <a class="btn btn-primary" href="#apply" data-i18n="ctaApply">Aplicar ahora</a>
+              <a class="btn btn-secondary" href="#requirements" data-i18n="ctaReq">Ver requisitos</a>
+            </div>
+
+            <div class="trust" aria-label="Trust markers">
+              <div class="trust-item" data-i18n="trust1">Proceso rápido</div>
+              <div class="trust-item" data-i18n="trust2">Diseño móvil</div>
+              <div class="trust-item" data-i18n="trust3">Sin cuentas</div>
             </div>
           </div>
 
-          <aside class="hero-right" aria-label="Detalles del puesto">
-            <div class="panel">
-              <div class="panel-head">
-                <h2 class="h2">
-                  Detalles del puesto
-                  <span class="h2-en">Role details</span>
-                </h2>
-              </div>
+          <aside class="hero-side" aria-label="Quick info">
+            <div class="side-card">
+              <div class="side-title" data-i18n="snapshotTitle">Resumen del puesto</div>
 
-              <dl class="meta">
-                <div class="meta-row">
-                  <dt class="meta-k">
-                    Ubicación
-                    <span class="meta-k-en">Location</span>
-                  </dt>
-                  <dd class="meta-v">
-                    Nashville, TN
-                  </dd>
-                </div>
-
-                <div class="meta-row">
-                  <dt class="meta-k">
-                    Horario
-                    <span class="meta-k-en">Schedule</span>
-                  </dt>
-                  <dd class="meta-v">
-                    Tiempo completo
-                    <span class="meta-v-en">Full-time • Shifts available</span>
-                  </dd>
-                </div>
-
-                <div class="meta-row">
-                  <dt class="meta-k">
-                    Pago
-                    <span class="meta-k-en">Pay</span>
-                  </dt>
-                  <dd class="meta-v">
-                    Según experiencia
-                    <span class="meta-v-en">Based on experience</span>
-                  </dd>
-                </div>
-
-                <div class="meta-row">
-                  <dt class="meta-k">
-                    Inicio
-                    <span class="meta-k-en">Start</span>
-                  </dt>
-                  <dd class="meta-v">
-                    Inmediato
-                    <span class="meta-v-en">Immediate start</span>
-                  </dd>
-                </div>
-              </dl>
+              <ul class="side-list">
+                <li>
+                  <span class="li-strong" data-i18n="snap1">Warehouse Associate</span>
+                  <span class="li-sub" data-i18n="snap1b">Warehouse Worker</span>
+                </li>
+                <li>
+                  <span class="li-strong" data-i18n="snap2">Materiales: paneles solares</span>
+                  <span class="li-sub" data-i18n="snap2b">Handling solar panels and related materials</span>
+                </li>
+                <li>
+                  <span class="li-strong" data-i18n="snap3">Trabajo físico y en equipo</span>
+                  <span class="li-sub" data-i18n="snap3b">Physical work with a team</span>
+                </li>
+                <li>
+                  <span class="li-strong" data-i18n="snap4">Seguridad primero</span>
+                  <span class="li-sub" data-i18n="snap4b">Safety-first environment</span>
+                </li>
+              </ul>
 
               <div class="contact">
-                <div class="contact-k">
-                  Email de contratación
-                  <span class="contact-k-en">Hiring email</span>
-                </div>
+                <div class="contact-k" data-i18n="hiringEmailLabel">Email de contratación</div>
                 <a class="contact-v" href="mailto:sunpcorporation@gmail.com">sunpcorporation@gmail.com</a>
+                <div class="contact-mini" data-i18n="contactMini">Recibirás respuesta si tu perfil encaja.</div>
               </div>
             </div>
           </aside>
@@ -158,144 +137,78 @@
 
     <!-- BENEFITS -->
     <section class="section" id="benefits">
-      <div class="container">
+      <div class="wrap">
         <div class="section-head">
-          <h2 class="h2">Beneficios <span class="h2-en">Benefits</span></h2>
-          <p class="sub">
-            Lo que puedes esperar desde el primer día.
-            <span class="sub-en">What you can expect from day one.</span>
-          </p>
+          <h2 class="h2" data-i18n="benefitsTitle">Beneficios</h2>
+          <p class="sub" data-i18n="benefitsSub">Lo que puedes esperar desde el primer día.</p>
         </div>
 
-        <ul class="list">
-          <li><span class="li-es">Trabajo estable</span><span class="li-en">Stable work</span></li>
-          <li><span class="li-es">Posibilidad de horas extra</span><span class="li-en">Overtime available</span></li>
-          <li><span class="li-es">Entrenamiento pagado</span><span class="li-en">Paid training</span></li>
-          <li><span class="li-es">Ambiente seguro</span><span class="li-en">Safe work environment</span></li>
-          <li><span class="li-es">Oportunidad de crecimiento</span><span class="li-en">Growth opportunities</span></li>
-        </ul>
+        <div class="list">
+          <div class="row" data-i18n="b1">Trabajo estable</div>
+          <div class="row" data-i18n="b2">Posibilidad de horas extra</div>
+          <div class="row" data-i18n="b3">Entrenamiento pagado</div>
+          <div class="row" data-i18n="b4">Ambiente seguro</div>
+          <div class="row" data-i18n="b5">Oportunidad de crecimiento</div>
+        </div>
       </div>
     </section>
 
     <!-- REQUIREMENTS -->
-    <section class="section section-alt" id="requirements">
-      <div class="container">
+    <section class="section section-muted" id="requirements">
+      <div class="wrap">
         <div class="section-head">
-          <h2 class="h2">Requisitos <span class="h2-en">Requirements</span></h2>
-          <p class="sub">
-            Para aplicar, necesitas cumplir lo siguiente.
-            <span class="sub-en">To apply, you must meet the following.</span>
-          </p>
+          <h2 class="h2" data-i18n="reqTitle">Requisitos</h2>
+          <p class="sub" data-i18n="reqSub">Para aplicar, necesitas cumplir lo siguiente.</p>
         </div>
 
-        <ul class="checks">
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            <div>
-              <div class="li-es">Tener 18 años o más</div>
-              <div class="li-en">Must be 18+</div>
-            </div>
-          </li>
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            <div>
-              <div class="li-es">Poder levantar hasta 50 lb</div>
-              <div class="li-en">Able to lift up to 50 lb</div>
-            </div>
-          </li>
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            <div>
-              <div class="li-es">Estar de pie y moverse todo el turno</div>
-              <div class="li-en">Stand and move full shift</div>
-            </div>
-          </li>
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            <div>
-              <div class="li-es">Puntualidad y responsabilidad</div>
-              <div class="li-en">Punctual and reliable</div>
-            </div>
-          </li>
-          <li>
-            <span class="check" aria-hidden="true">✓</span>
-            <div>
-              <div class="li-es">Experiencia en warehouse es un plus</div>
-              <div class="li-en">Warehouse experience is a plus</div>
-            </div>
-          </li>
-        </ul>
+        <div class="checklist">
+          <div class="check"><span class="tick">✓</span><span data-i18n="r1">Tener 18 años o más</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r2">Poder levantar hasta 50 lb</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r3">Estar de pie y moverse todo el turno</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r4">Puntualidad y responsabilidad</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r5">Experiencia en warehouse es un plus</span></div>
+        </div>
       </div>
     </section>
 
     <!-- RESPONSIBILITIES -->
     <section class="section" id="responsibilities">
-      <div class="container">
+      <div class="wrap">
         <div class="section-head">
-          <h2 class="h2">Responsabilidades <span class="h2-en">Responsibilities</span></h2>
-          <p class="sub">
-            Tareas típicas durante el turno.
-            <span class="sub-en">Typical tasks during the shift.</span>
-          </p>
+          <h2 class="h2" data-i18n="respTitle">Responsabilidades</h2>
+          <p class="sub" data-i18n="respSub">Tareas típicas durante el turno.</p>
         </div>
 
         <div class="cards">
           <article class="card">
-            <h3 class="h3">
-              Cargar y descargar mercancía
-              <span class="h3-en">Load & unload materials</span>
-            </h3>
-            <p class="p">
-              Movimiento seguro de materiales siguiendo procedimientos del almacén.
-              <span class="p-en">Safe handling following warehouse procedures.</span>
-            </p>
+            <h3 class="h3" data-i18n="p1">Cargar y descargar mercancía</h3>
+            <p data-i18n="p1b">Movimiento seguro de materiales siguiendo procedimientos del almacén.</p>
           </article>
 
           <article class="card">
-            <h3 class="h3">
-              Preparar pedidos
-              <span class="h3-en">Order picking & packing</span>
-            </h3>
-            <p class="p">
-              Seleccionar, empacar y etiquetar pedidos con precisión.
-              <span class="p-en">Pick, pack, and label orders accurately.</span>
-            </p>
+            <h3 class="h3" data-i18n="p2">Preparar pedidos</h3>
+            <p data-i18n="p2b">Seleccionar, empacar y etiquetar pedidos con precisión.</p>
           </article>
 
           <article class="card">
-            <h3 class="h3">
-              Organizar inventario
-              <span class="h3-en">Inventory organization</span>
-            </h3>
-            <p class="p">
-              Mantener ubicaciones claras y apoyar conteos básicos.
-              <span class="p-en">Keep locations organized and support basic counts.</span>
-            </p>
+            <h3 class="h3" data-i18n="p3">Organizar inventario</h3>
+            <p data-i18n="p3b">Mantener ubicaciones claras y apoyar conteos básicos.</p>
           </article>
 
           <article class="card">
-            <h3 class="h3">
-              Mantener el área limpia y segura
-              <span class="h3-en">Keep area clean & safe</span>
-            </h3>
-            <p class="p">
-              Orden, limpieza y enfoque en seguridad en todo momento.
-              <span class="p-en">Housekeeping and safety focus at all times.</span>
-            </p>
+            <h3 class="h3" data-i18n="p4">Mantener el área limpia y segura</h3>
+            <p data-i18n="p4b">Orden, limpieza y enfoque en seguridad en todo momento.</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- APPLICATION -->
-    <section class="section section-alt" id="apply">
-      <div class="container">
+    <section class="section section-muted" id="apply">
+      <div class="wrap">
         <div class="section-head">
-          <h2 class="h2">Formulario de aplicación <span class="h2-en">Application form</span></h2>
-          <p class="sub">
-            Completa esto y genera el email listo para enviar.
-            <span class="sub-en">Fill this out and generate an email ready to send.</span>
-          </p>
+          <h2 class="h2" data-i18n="formTitle">Formulario de aplicación</h2>
+          <p class="sub" data-i18n="formSub">Completa esto para generar el email listo para enviar.</p>
         </div>
 
         <div class="alert" id="formAlert" role="alert" aria-live="polite" hidden></div>
@@ -303,178 +216,152 @@
         <form id="appForm" class="form" novalidate>
           <div class="grid">
             <div class="field">
-              <label for="fullName">Nombre y Apellido <span class="lab-en">Full Name</span> <span class="req">*</span></label>
-              <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Ej: Juan Pérez" required />
-              <div class="hint">Como aparece en tu identificación. <span class="hint-en">As on your ID.</span></div>
+              <label for="fullName" data-i18n="fName">Nombre y Apellido</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+              <div class="mini" data-i18n="fNameH">Como aparece en tu identificación.</div>
             </div>
 
             <div class="field">
-              <label for="phone">Teléfono <span class="lab-en">Phone number</span> <span class="req">*</span></label>
-              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ej: (615) 555-1234" required />
-              <div class="hint">Incluye código de área. <span class="hint-en">Include area code.</span></div>
+              <label for="phone" data-i18n="fPhone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
+              <div class="mini" data-i18n="fPhoneH">Incluye código de área.</div>
             </div>
 
             <div class="field">
-              <label for="email">Email (opcional) <span class="lab-en">Email (optional)</span></label>
-              <input id="email" name="email" type="email" autocomplete="email" placeholder="Ej: nombre@email.com" />
+              <label for="email" data-i18n="fEmail">Email (opcional)</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+              <div class="mini" data-i18n="fEmailH">Si prefieres contacto por email.</div>
             </div>
 
             <div class="field">
-              <label for="age">Edad <span class="lab-en">Age</span> <span class="req">*</span></label>
+              <label for="age" data-i18n="fAge">Edad</label>
               <select id="age" name="age" required>
-                <option value="">Selecciona / Select</option>
-                <option value="18+">18+ (Cumplo / I meet this)</option>
-                <option value="under18">Menos de 18 / Under 18</option>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="18+" data-i18n="opt18">18+ (Cumplo)</option>
+                <option value="under18" data-i18n="optU18">Menos de 18</option>
               </select>
-              <div class="hint">Debes tener 18+. <span class="hint-en">Must be 18+.</span></div>
+              <div class="mini" data-i18n="fAgeH">Debes tener 18+.</div>
             </div>
 
             <div class="field">
-              <label for="city">Ciudad <span class="lab-en">City</span> <span class="req">*</span></label>
-              <input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Ej: Nashville" required />
+              <label for="city" data-i18n="fCity">Ciudad</label>
+              <input id="city" name="city" type="text" autocomplete="address-level2" required />
             </div>
 
             <div class="field">
-              <label for="transport">¿Tienes transporte propio? <span class="lab-en">Do you have transportation?</span> <span class="req">*</span></label>
+              <label for="transport" data-i18n="fTransport">¿Tienes transporte propio?</label>
               <select id="transport" name="transport" required>
-                <option value="">Selecciona / Select</option>
-                <option value="Sí / Yes">Sí / Yes</option>
-                <option value="No / No">No / No</option>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="lift">¿Puedes levantar 50 lb? <span class="lab-en">Can you lift 50 lb?</span> <span class="req">*</span></label>
+              <label for="lift" data-i18n="fLift">¿Puedes levantar 50 lb?</label>
               <select id="lift" name="lift" required>
-                <option value="">Selecciona / Select</option>
-                <option value="Sí / Yes">Sí / Yes</option>
-                <option value="No / No">No / No</option>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
               </select>
-              <div class="hint">Requisito del puesto. <span class="hint-en">Required for the role.</span></div>
+              <div class="mini" data-i18n="fLiftH">Requisito del puesto.</div>
             </div>
 
             <div class="field">
-              <label for="whExp">¿Experiencia en warehouse? <span class="lab-en">Warehouse experience?</span> <span class="req">*</span></label>
+              <label for="whExp" data-i18n="fWhExp">¿Experiencia en warehouse?</label>
               <select id="whExp" name="whExp" required>
-                <option value="">Selecciona / Select</option>
-                <option value="Sí / Yes">Sí / Yes</option>
-                <option value="No / No">No / No</option>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
               </select>
             </div>
 
             <div class="field" id="expYearsWrap" hidden>
-              <label for="expYears">Años de experiencia <span class="lab-en">Years of experience</span> <span class="req">*</span></label>
-              <input id="expYears" name="expYears" type="number" inputmode="numeric" min="0" max="20" step="1" placeholder="0–20" />
-              <div class="hint">Aprox. (0–20). <span class="hint-en">Approx. (0–20).</span></div>
+              <label for="expYears" data-i18n="fYears">Años de experiencia (0–20)</label>
+              <input id="expYears" name="expYears" type="number" inputmode="numeric" min="0" max="20" step="1" />
             </div>
 
             <div class="field">
-              <label for="shift">Turno <span class="lab-en">Shift</span> <span class="req">*</span></label>
+              <label for="shift" data-i18n="fShift">Turno</label>
               <select id="shift" name="shift" required>
-                <option value="">Selecciona / Select</option>
-                <option value="Mañana / Morning">Mañana / Morning</option>
-                <option value="Tarde / Evening">Tarde / Evening</option>
-                <option value="Noche / Night">Noche / Night</option>
-                <option value="Cualquiera / Any">Cualquiera / Any</option>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Mañana" data-i18n="shiftMorning">Mañana</option>
+                <option value="Tarde" data-i18n="shiftEvening">Tarde</option>
+                <option value="Noche" data-i18n="shiftNight">Noche</option>
+                <option value="Cualquiera" data-i18n="shiftAny">Cualquiera</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="weekends">¿Puedes trabajar fines de semana? <span class="lab-en">Weekends?</span> <span class="req">*</span></label>
+              <label for="weekends" data-i18n="fWeekends">¿Puedes trabajar fines de semana?</label>
               <select id="weekends" name="weekends" required>
-                <option value="">Selecciona / Select</option>
-                <option value="Sí / Yes">Sí / Yes</option>
-                <option value="No / No">No / No</option>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
               </select>
             </div>
 
             <div class="field">
-              <label for="start">Inicio <span class="lab-en">Start date</span> <span class="req">*</span></label>
+              <label for="start" data-i18n="fStart">Inicio</label>
               <select id="start" name="start" required>
-                <option value="">Selecciona / Select</option>
-                <option value="Inmediato / Immediate">Inmediato / Immediate</option>
-                <option value="1 semana / 1 week">1 semana / 1 week</option>
-                <option value="2 semanas / 2 weeks">2 semanas / 2 weeks</option>
-                <option value="1 mes / 1 month">1 mes / 1 month</option>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Inmediato" data-i18n="startNow">Inmediato</option>
+                <option value="1 semana" data-i18n="start1w">1 semana</option>
+                <option value="2 semanas" data-i18n="start2w">2 semanas</option>
+                <option value="1 mes" data-i18n="start1m">1 mes</option>
               </select>
             </div>
 
             <div class="field field-full">
-              <label for="notes">Notas (opcional) <span class="lab-en">Notes (optional)</span></label>
-              <textarea id="notes" name="notes" maxlength="400" rows="4" placeholder="Ej: disponibilidad específica, experiencia con montacargas (si aplica), etc."></textarea>
-              <div class="row">
-                <div class="hint">Máximo 400 caracteres. <span class="hint-en">Max 400 characters.</span></div>
-                <div class="counter" id="notesCounter" aria-live="polite">0/400</div>
+              <label for="notes" data-i18n="fNotes">Notas (opcional)</label>
+              <textarea id="notes" name="notes" maxlength="400" rows="4"></textarea>
+              <div class="count">
+                <span class="mini" data-i18n="notesH">Máximo 400 caracteres.</span>
+                <span class="mono" id="notesCounter">0/400</span>
               </div>
             </div>
           </div>
 
           <div class="actions">
-            <button type="button" class="btn btn-primary" id="btnGenerate">
-              Generar Email <span class="btn-en">Generate Email</span>
-            </button>
-
-            <button type="button" class="btn btn-secondary" id="btnCopy">
-              Copiar solicitud <span class="btn-en">Copy application</span>
-            </button>
-
-            <button type="reset" class="btn btn-ghost" id="btnReset">
-              Limpiar <span class="btn-en">Reset</span>
-            </button>
+            <button type="button" class="btn btn-primary" id="btnGenerate" data-i18n="btnEmail">Generar Email</button>
+            <button type="button" class="btn btn-secondary" id="btnCopy" data-i18n="btnCopy">Copiar solicitud</button>
+            <button type="reset" class="btn btn-ghost" id="btnReset" data-i18n="btnReset">Limpiar</button>
           </div>
 
-          <div class="fine">
-            * Campos obligatorios. <span class="fine-en">* Required fields.</span>
-          </div>
+          <div class="fine" data-i18n="requiredNote">* Campos obligatorios.</div>
         </form>
 
-        <section class="summary" aria-label="Resumen de la solicitud">
+        <section class="summary" aria-label="Application summary">
           <div class="summary-head">
-            <h3 class="h3">Resumen de tu solicitud <span class="h3-en">Application summary</span></h3>
-            <p class="sub">
-              Revisa antes de enviar.
-              <span class="sub-en">Review before sending.</span>
-            </p>
+            <h3 class="h3" data-i18n="sumTitle">Resumen de tu solicitud</h3>
+            <p class="sub" data-i18n="sumSub">Revisa antes de enviar.</p>
           </div>
 
-          <pre id="summaryText" class="summary-box">Completa el formulario para ver el resumen.
-Fill out the form to see the summary.</pre>
+          <pre id="summaryText" class="summary-box">Completa el formulario para ver el resumen.</pre>
 
-          <div class="note">
-            <div class="note-es">Si “Generar Email” no abre tu app, usa “Copiar solicitud” y pégala en un email.</div>
-            <div class="note-en">If “Generate Email” doesn’t open your mail app, use “Copy application” and paste it into an email.</div>
+          <div class="hintbox">
+            <div class="hint-title" data-i18n="tipTitle">Tip</div>
+            <div class="hint-text" data-i18n="tipText">
+              Si “Generar Email” no abre tu app, usa “Copiar solicitud” y pégala en un email.
+            </div>
           </div>
         </section>
 
-        <!-- NEXT STEP: HOUSING FEE -->
-        <section class="section-mini" id="housing">
-          <div class="panel panel-strong">
-            <h3 class="h3">
-              Siguiente paso: pagar la primera semana de hospedaje
-              <span class="h3-en">Next step: pay the first week of housing</span>
-            </h3>
-
-            <p class="p">
-              Después de completar tu solicitud, usa el botón para continuar con el pago. Si todavía no te dieron el enlace de pago, el botón te abrirá un email para solicitarlo.
-              <span class="p-en">After completing your application, use the button to continue to payment. If you don’t have the payment link yet, the button will open an email to request it.</span>
+        <!-- NEXT STEP: HOUSING PAYMENT -->
+        <section class="next" id="housing">
+          <div class="next-card">
+            <div class="next-title" data-i18n="payTitle">Siguiente paso: pagar 1ª semana de hospedaje</div>
+            <p class="next-text" data-i18n="payText">
+              Se habilita cuando la solicitud está completa y cumples requisitos (18+ y 50 lb).
             </p>
 
-            <div class="actions">
-              <button type="button" class="btn btn-primary" id="btnPay" disabled>
-                Continuar a pago <span class="btn-en">Continue to payment</span>
-              </button>
-
-              <button type="button" class="btn btn-secondary" id="btnCopyPay" disabled>
-                Copiar texto para pago <span class="btn-en">Copy payment text</span>
-              </button>
-
-              <a class="btn btn-ghost" href="#apply">
-                Volver al formulario <span class="btn-en">Back to form</span>
+            <div class="next-actions">
+              <a class="btn btn-primary" id="btnHousing" href="#" target="_blank" rel="noopener" aria-disabled="true" data-i18n="payBtn">
+                Continuar a pago
               </a>
-            </div>
-
-            <div class="fine">
-              Nota: este sitio no procesa pagos. <span class="fine-en">Note: this site does not process payments.</span>
+              <div class="mini" id="housingNote" data-i18n="payNote">
+                Configura la URL de pago en script.js.
+              </div>
             </div>
           </div>
         </section>
@@ -484,26 +371,16 @@ Fill out the form to see the summary.</pre>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="foot-left">
-        <div class="foot-title">Privacidad <span class="foot-title-en">Privacy</span></div>
-        <p class="foot-p">
-          Tu información solo se usará para contactarte sobre esta vacante.
-          <span class="foot-en">Your information will only be used to contact you about this position.</span>
-        </p>
+    <div class="wrap footer-row">
+      <div class="privacy" data-i18n="privacy">
+        Tu información solo se usará para contactarte sobre esta vacante.
       </div>
 
-      <div class="foot-right">
-        <div class="foot-title">Contacto <span class="foot-title-en">Contact</span></div>
-        <a class="foot-link" href="mailto:sunpcorporation@gmail.com">sunpcorporation@gmail.com</a>
-        <div class="foot-mini">Nashville, TN</div>
+      <div class="foot-contact">
+        <a class="mail" href="mailto:sunpcorporation@gmail.com">sunpcorporation@gmail.com</a>
+        <span class="dotsep">•</span>
+        <span class="mono">© <span id="year"></span></span>
       </div>
-    </div>
-
-    <div class="container foot-bottom">
-      <span>© <span id="year"></span> SunP Corporation</span>
-      <span class="dot-sep" aria-hidden="true">•</span>
-      <a class="foot-link" href="#top">Arriba <span class="foot-en-inline">Top</span></a>
     </div>
   </footer>
 
