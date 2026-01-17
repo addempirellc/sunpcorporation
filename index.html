@@ -1,491 +1,389 @@
-:root{
-  /* Premium dark base */
-  --bg:#070A12;
-  --paper:#0B1020;
-  --panel:rgba(11,16,32,.72);
-  --line:rgba(148,163,184,.18);
-  --line2:rgba(226,232,240,.08);
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  --text:#EEF2FF;
-  --muted:#B7C0D4;
-  --muted2:#8792A8;
+  <title>Apply — Warehouse Associate (Solar Panels) | Nashville, TN</title>
+  <meta name="description" content="Apply for Warehouse Associate / Warehouse Worker at a solar panel warehouse in Nashville, TN. Clean form with validation, email generator, and copy application." />
 
-  /* Premium accents (NO green) */
-  --accent:#3B82F6;   /* blue */
-  --accent2:#F59E0B;  /* amber/gold */
+  <!-- OpenGraph (no external images) -->
+  <meta property="og:title" content="Warehouse Associate — Solar Panels | Nashville, TN" />
+  <meta property="og:description" content="Stable physical work with growth opportunity. Apply fast. Generate email and copy application." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
 
-  --danger:#FB7185;
-  --warn:#FBBF24;
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  --radius:18px;
-  --radius2:28px;
+<body>
+  <a class="skip" href="#apply" data-i18n="skip">Saltar al formulario</a>
 
-  --shadow: 0 28px 70px rgba(0,0,0,.55);
-  --shadow2: 0 14px 34px rgba(0,0,0,.30);
+  <header class="header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <div class="mark" aria-hidden="true">SP</div>
+        <div class="brand-text">
+          <div class="brand-title">Solar Panel Warehouse</div>
+          <div class="brand-sub">Nashville, TN</div>
+        </div>
+      </div>
 
-  --max:920px;
-}
+      <div class="header-actions">
+        <div class="status" role="status" aria-label="Now hiring">
+          <span class="pulse" aria-hidden="true"></span>
+          <span data-i18n="nowHiring">Contratación activa</span>
+        </div>
 
-*{ box-sizing:border-box; }
-html{ scroll-behavior:smooth; }
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+        <!-- Not floating. Clean segmented control. -->
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang="es" aria-pressed="true">ES</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  color:var(--text);
-  background:
-    radial-gradient(900px 620px at 12% 6%, rgba(59,130,246,.12), transparent 60%),
-    radial-gradient(760px 520px at 92% 0%, rgba(245,158,11,.10), transparent 62%),
-    linear-gradient(180deg, #050712, var(--bg) 55%, #040611);
-}
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <div class="pill">
+              <span class="pill-k" data-i18n="roleLabel">Puesto</span>
+              <span class="pill-v" data-i18n="roleValue">Asociado de Almacén — Paneles Solares</span>
+            </div>
 
-a{ color:inherit; }
-.wrap{ width:min(var(--max), calc(100% - 32px)); margin:0 auto; }
+            <h1 class="h1" data-i18n="heroTitle">
+              Aplica para trabajar en nuestro warehouse de paneles solares
+            </h1>
 
-.skip{
-  position:absolute; left:-999px; top:10px;
-  background:#fff; color:#000;
-  padding:10px 12px; border-radius:12px; z-index:999;
-}
-.skip:focus{ left:12px; }
+            <p class="lead" data-i18n="heroSubtitle">
+              Trabajo físico, estable y con oportunidad de crecimiento.
+            </p>
 
-/* Header */
-.header{
-  position:sticky; top:0; z-index:50;
-  background:rgba(4,6,17,.72);
-  backdrop-filter: blur(12px);
-  border-bottom:1px solid var(--line2);
-}
-.header-row{
-  display:flex; align-items:center; justify-content:space-between;
-  gap:12px; padding:14px 0;
-}
-.brand{ display:flex; align-items:center; gap:12px; min-width:0; }
-.mark{
-  width:42px; height:42px; border-radius:14px;
-  display:grid; place-items:center;
-  font-weight:950; letter-spacing:.02em;
-  background: linear-gradient(135deg, rgba(59,130,246,.22), rgba(245,158,11,.16));
-  border:1px solid rgba(148,163,184,.18);
-  box-shadow: 0 12px 28px rgba(0,0,0,.32);
-}
-.brand-title{ font-weight:950; line-height:1.05; letter-spacing:-0.01em; }
-.brand-sub{ color:var(--muted2); font-size:13px; margin-top:2px; }
+            <div class="facts" aria-label="Job details">
+              <div class="fact">
+                <div class="fact-k" data-i18n="locationLabel">Ubicación</div>
+                <div class="fact-v">Nashville, TN</div>
+              </div>
 
-.header-actions{ display:flex; align-items:center; gap:10px; }
+              <div class="fact">
+                <div class="fact-k" data-i18n="scheduleLabel">Horario</div>
+                <div class="fact-v">
+                  <span data-i18n="scheduleValue">Tiempo completo</span>
+                  <span class="fact-sub" data-i18n="scheduleSub">Turnos disponibles</span>
+                </div>
+              </div>
 
-.status{
-  display:flex; align-items:center; gap:8px;
-  padding:10px 12px; border-radius:999px;
-  border:1px solid rgba(148,163,184,.18);
-  background: rgba(11,16,32,.45);
-  font-size:13px; font-weight:850;
-  white-space:nowrap;
-}
-.pulse{
-  width:10px; height:10px; border-radius:50%;
-  background:var(--accent2);
-  box-shadow: 0 0 0 5px rgba(245,158,11,.10);
-}
+              <div class="fact">
+                <div class="fact-k" data-i18n="payLabel">Pago</div>
+                <div class="fact-v" data-i18n="payValue">Según experiencia</div>
+              </div>
 
-.lang{
-  display:flex;
-  border-radius:999px;
-  border:1px solid rgba(148,163,184,.20);
-  overflow:hidden;
-  background: rgba(2,6,23,.30);
-}
-.lang-btn{
-  appearance:none; border:0; background:transparent;
-  color:var(--muted);
-  padding:10px 12px;
-  font-weight:950; letter-spacing:.03em;
-  cursor:pointer;
-}
-.lang-btn[aria-pressed="true"]{
-  color:#0A0D14;
-  background: linear-gradient(135deg, rgba(245,158,11,.95), rgba(251,191,36,.88));
-}
-.lang-btn:focus{ outline: none; box-shadow: inset 0 0 0 2px rgba(226,232,240,.20); }
+              <div class="fact">
+                <div class="fact-k" data-i18n="startLabel">Inicio</div>
+                <div class="fact-v" data-i18n="startValue">Inmediato</div>
+              </div>
+            </div>
 
-/* Hero */
-.hero{ padding:26px 0 16px; }
+            <div class="cta">
+              <a class="btn btn-primary" href="#apply" data-i18n="ctaApply">Aplicar ahora</a>
+              <a class="btn btn-secondary" href="#requirements" data-i18n="ctaReq">Ver requisitos</a>
+            </div>
 
-.hero-card{
-  border-radius:var(--radius2);
-  border:1px solid rgba(226,232,240,.08);
-  background: linear-gradient(180deg, rgba(11,16,32,.94), rgba(7,10,18,.86));
-  box-shadow:var(--shadow);
-  overflow:hidden;
-  display:grid;
-  gap:16px;
-  padding:22px;
-}
+            <div class="trust" aria-label="Trust markers">
+              <div class="trust-item" data-i18n="trust1">Proceso rápido</div>
+              <div class="trust-item" data-i18n="trust2">Diseño móvil</div>
+              <div class="trust-item" data-i18n="trust3">Sin cuentas</div>
+            </div>
+          </div>
 
-.pill{
-  display:inline-flex; align-items:center; gap:10px;
-  padding:10px 12px;
-  border-radius:999px;
-  border:1px solid rgba(148,163,184,.16);
-  background: rgba(2,6,23,.28);
-  color:var(--muted);
-  font-size:13px;
-}
-.pill-k{ font-weight:950; color:var(--text); }
-.pill-v{ font-weight:850; color:var(--text); }
+          <aside class="hero-side" aria-label="Quick info">
+            <div class="side-card">
+              <div class="side-title" data-i18n="snapshotTitle">Resumen del puesto</div>
 
-.h1{
-  margin:16px 0 10px;
-  font-size: clamp(30px, 4.6vw, 46px);
-  line-height:1.06;
-  letter-spacing:-0.03em;
-}
-.lead{
-  margin:0 0 16px;
-  color:var(--muted);
-  line-height:1.6;
-  font-size:16.5px;
-  max-width: 60ch;
-}
+              <ul class="side-list">
+                <li>
+                  <span class="li-strong" data-i18n="snap1">Warehouse Associate</span>
+                  <span class="li-sub" data-i18n="snap1b">Warehouse Worker</span>
+                </li>
+                <li>
+                  <span class="li-strong" data-i18n="snap2">Materiales: paneles solares</span>
+                  <span class="li-sub" data-i18n="snap2b">Handling solar panels and related materials</span>
+                </li>
+                <li>
+                  <span class="li-strong" data-i18n="snap3">Trabajo físico y en equipo</span>
+                  <span class="li-sub" data-i18n="snap3b">Physical work with a team</span>
+                </li>
+                <li>
+                  <span class="li-strong" data-i18n="snap4">Seguridad primero</span>
+                  <span class="li-sub" data-i18n="snap4b">Safety-first environment</span>
+                </li>
+              </ul>
 
-.facts{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap:10px;
-  margin: 14px 0 18px;
-}
-.fact{
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(2,6,23,.26);
-  border-radius:18px;
-  padding:12px;
-}
-.fact-k{
-  font-size:12px;
-  color:var(--muted2);
-  font-weight:900;
-  letter-spacing:.08em;
-  text-transform: uppercase;
-}
-.fact-v{
-  margin-top:6px;
-  font-weight:900;
-  color:var(--text);
-  line-height:1.25;
-}
-.fact-sub{
-  display:block;
-  margin-top:6px;
-  font-size:13px;
-  color:var(--muted);
-  font-weight:650;
-}
+              <div class="contact">
+                <div class="contact-k" data-i18n="hiringEmailLabel">Email de contratación</div>
+                <a class="contact-v" href="mailto:sunpcorporation@gmail.com">sunpcorporation@gmail.com</a>
+                <div class="contact-mini" data-i18n="contactMini">Recibirás respuesta si tu perfil encaja.</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
 
-/* Buttons (premium) */
-.cta{ display:flex; flex-wrap:wrap; gap:10px; }
+    <!-- BENEFITS -->
+    <section class="section" id="benefits">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="benefitsTitle">Beneficios</h2>
+          <p class="sub" data-i18n="benefitsSub">Lo que puedes esperar desde el primer día.</p>
+        </div>
 
-.btn{
-  appearance:none;
-  border:1px solid transparent;
-  border-radius:14px;
-  padding:12px 16px;
-  min-height:48px;
-  font-weight:950;
-  text-decoration:none;
-  cursor:pointer;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  transition: transform .08s ease, filter .18s ease, background .18s ease, border-color .18s ease, box-shadow .18s ease;
-}
-.btn:active{ transform: translateY(1px); }
+        <div class="list">
+          <div class="row" data-i18n="b1">Trabajo estable</div>
+          <div class="row" data-i18n="b2">Posibilidad de horas extra</div>
+          <div class="row" data-i18n="b3">Entrenamiento pagado</div>
+          <div class="row" data-i18n="b4">Ambiente seguro</div>
+          <div class="row" data-i18n="b5">Oportunidad de crecimiento</div>
+        </div>
+      </div>
+    </section>
 
-.btn-primary{
-  color:#0A0D14;
-  background: linear-gradient(135deg, rgba(245,158,11,.96), rgba(251,191,36,.88));
-  border-color: rgba(245,158,11,.22);
-  box-shadow: 0 12px 26px rgba(245,158,11,.14);
-}
-.btn-primary:hover{
-  filter: brightness(1.02);
-  box-shadow: 0 16px 34px rgba(245,158,11,.18);
-}
+    <!-- REQUIREMENTS -->
+    <section class="section section-muted" id="requirements">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="reqTitle">Requisitos</h2>
+          <p class="sub" data-i18n="reqSub">Para aplicar, necesitas cumplir lo siguiente.</p>
+        </div>
 
-.btn-secondary{
-  color:var(--text);
-  background: rgba(2,6,23,.22);
-  border-color: rgba(148,163,184,.22);
-}
-.btn-secondary:hover{ filter: brightness(1.05); }
+        <div class="checklist">
+          <div class="check"><span class="tick">✓</span><span data-i18n="r1">Tener 18 años o más</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r2">Poder levantar hasta 50 lb</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r3">Estar de pie y moverse todo el turno</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r4">Puntualidad y responsabilidad</span></div>
+          <div class="check"><span class="tick">✓</span><span data-i18n="r5">Experiencia en warehouse es un plus</span></div>
+        </div>
+      </div>
+    </section>
 
-.btn-ghost{
-  color:var(--muted);
-  background: transparent;
-  border-color: rgba(148,163,184,.22);
-}
-.btn-ghost:hover{ color:var(--text); }
+    <!-- RESPONSIBILITIES -->
+    <section class="section" id="responsibilities">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="respTitle">Responsabilidades</h2>
+          <p class="sub" data-i18n="respSub">Tareas típicas durante el turno.</p>
+        </div>
 
-.trust{
-  margin-top:14px;
-  display:flex; flex-wrap:wrap;
-  gap:10px;
-}
-.trust-item{
-  padding:8px 10px;
-  border-radius:999px;
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(2,6,23,.18);
-  color:var(--muted);
-  font-size:13px;
-  font-weight:650;
-}
+        <div class="cards">
+          <article class="card">
+            <h3 class="h3" data-i18n="p1">Cargar y descargar mercancía</h3>
+            <p data-i18n="p1b">Movimiento seguro de materiales siguiendo procedimientos del almacén.</p>
+          </article>
 
-/* Side */
-.hero-side .side-card{
-  border-radius:var(--radius);
-  border:1px solid rgba(148,163,184,.16);
-  background: rgba(2,6,23,.22);
-  padding:16px;
-  box-shadow: var(--shadow2);
-}
-.side-title{
-  font-weight:950;
-  letter-spacing:-0.01em;
-  margin-bottom:12px;
-}
-.side-list{
-  list-style:none; padding:0; margin:0;
-  display:grid; gap:10px;
-}
-.side-list li{
-  padding:10px 10px;
-  border-radius:16px;
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(11,16,32,.32);
-}
-.li-strong{ font-weight:950; }
-.li-sub{ display:block; margin-top:4px; color:var(--muted2); font-size:13px; }
+          <article class="card">
+            <h3 class="h3" data-i18n="p2">Preparar pedidos</h3>
+            <p data-i18n="p2b">Seleccionar, empacar y etiquetar pedidos con precisión.</p>
+          </article>
 
-.contact{
-  margin-top:12px;
-  padding:12px;
-  border-radius:16px;
-  border:1px solid rgba(245,158,11,.22);
-  background: rgba(245,158,11,.08);
-}
-.contact-k{ font-weight:950; font-size:13px; color: rgba(238,242,255,.92); }
-.contact-v{
-  display:inline-block;
-  margin-top:6px;
-  color: rgba(251,191,36,.95);
-  font-weight:950;
-  text-decoration:none;
-}
-.contact-v:hover{ text-decoration:underline; }
-.contact-mini{ margin-top:6px; color:rgba(238,242,255,.80); font-size:13px; }
+          <article class="card">
+            <h3 class="h3" data-i18n="p3">Organizar inventario</h3>
+            <p data-i18n="p3b">Mantener ubicaciones claras y apoyar conteos básicos.</p>
+          </article>
 
-/* Sections */
-.section{ padding:34px 0; }
-.section-muted{
-  background: rgba(2,6,23,.16);
-  border-top:1px solid var(--line2);
-  border-bottom:1px solid var(--line2);
-}
-.section-head{ margin-bottom:14px; }
-.h2{ margin:0; font-size:20px; letter-spacing:-0.01em; font-weight:950; }
-.sub{ margin:8px 0 0; color:var(--muted); line-height:1.6; max-width: 70ch; }
+          <article class="card">
+            <h3 class="h3" data-i18n="p4">Mantener el área limpia y segura</h3>
+            <p data-i18n="p4b">Orden, limpieza y enfoque en seguridad en todo momento.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-.list{
-  margin-top:16px;
-  display:grid; gap:10px;
-}
-.row{
-  padding:12px 14px;
-  border-radius:18px;
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(11,16,32,.30);
-  font-weight:850;
-}
+    <!-- APPLICATION -->
+    <section class="section section-muted" id="apply">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="h2" data-i18n="formTitle">Formulario de aplicación</h2>
+          <p class="sub" data-i18n="formSub">Completa esto para generar el email listo para enviar.</p>
+        </div>
 
-.checklist{
-  margin-top:16px;
-  display:grid; gap:10px;
-}
-.check{
-  display:flex; align-items:flex-start; gap:10px;
-  padding:12px 14px;
-  border-radius:18px;
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(11,16,32,.30);
-  font-weight:850;
-}
-.tick{ color: var(--accent2); font-weight:950; margin-top:1px; }
+        <div class="alert" id="formAlert" role="alert" aria-live="polite" hidden></div>
 
-/* Cards */
-.cards{
-  margin-top:16px;
-  display:grid; gap:12px;
-}
-.card{
-  padding:16px;
-  border-radius:20px;
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(11,16,32,.30);
-  box-shadow: var(--shadow2);
-}
-.h3{ margin:0 0 8px; font-size:16px; font-weight:950; letter-spacing:-0.01em; }
-.card p{ margin:0; color:var(--muted); line-height:1.65; }
+        <form id="appForm" class="form" novalidate>
+          <div class="grid">
+            <div class="field">
+              <label for="fullName" data-i18n="fName">Nombre y Apellido</label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required />
+              <div class="mini" data-i18n="fNameH">Como aparece en tu identificación.</div>
+            </div>
 
-/* Form */
-.alert{
-  border-radius:18px;
-  border:1px solid rgba(251,113,133,.35);
-  background: rgba(251,113,133,.10);
-  padding:12px;
-  margin:0 0 12px;
-  color:var(--text);
-}
-.form{
-  border-radius:var(--radius2);
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(11,16,32,.46);
-  padding:16px;
-  box-shadow: 0 16px 40px rgba(0,0,0,.22);
-}
-.grid{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap:12px;
-}
+            <div class="field">
+              <label for="phone" data-i18n="fPhone">Teléfono</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required />
+              <div class="mini" data-i18n="fPhoneH">Incluye código de área.</div>
+            </div>
 
-.field label{
-  display:block;
-  font-weight:950;
-  margin-bottom:8px;
-}
+            <div class="field">
+              <label for="email" data-i18n="fEmail">Email (opcional)</label>
+              <input id="email" name="email" type="email" autocomplete="email" />
+              <div class="mini" data-i18n="fEmailH">Si prefieres contacto por email.</div>
+            </div>
 
-input, select, textarea{
-  width:100%;
-  border-radius:14px;
-  border:1px solid rgba(148,163,184,.22);
-  background: rgba(2,6,23,.34);
-  color:var(--text);
-  padding:12px;
-  font-size:16px;
-  outline:none;
-}
-textarea{ resize: vertical; min-height:110px; }
-input:focus, select:focus, textarea:focus{
-  border-color: rgba(245,158,11,.55);
-  box-shadow: 0 0 0 4px rgba(245,158,11,.12);
-}
+            <div class="field">
+              <label for="age" data-i18n="fAge">Edad</label>
+              <select id="age" name="age" required>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="18+" data-i18n="opt18">18+ (Cumplo)</option>
+                <option value="under18" data-i18n="optU18">Menos de 18</option>
+              </select>
+              <div class="mini" data-i18n="fAgeH">Debes tener 18+.</div>
+            </div>
 
-.mini{
-  margin-top:8px;
-  color:var(--muted2);
-  font-size:13px;
-  line-height:1.4;
-}
-.count{
-  margin-top:8px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:10px;
-}
-.mono{
-  font-variant-numeric: tabular-nums;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-.field-full{ grid-column: 1 / -1; }
+            <div class="field">
+              <label for="city" data-i18n="fCity">Ciudad</label>
+              <input id="city" name="city" type="text" autocomplete="address-level2" required />
+            </div>
 
-.actions{
-  margin-top:14px;
-  display:grid;
-  grid-template-columns: 1fr;
-  gap:10px;
-}
-.fine{
-  margin-top:10px;
-  color:var(--muted2);
-  font-size:13px;
-}
+            <div class="field">
+              <label for="transport" data-i18n="fTransport">¿Tienes transporte propio?</label>
+              <select id="transport" name="transport" required>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
+              </select>
+            </div>
 
-/* Summary */
-.summary{
-  margin-top:14px;
-  border-radius:var(--radius2);
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(2,6,23,.18);
-  padding:16px;
-}
-.summary-box{
-  margin:10px 0 0;
-  border-radius:18px;
-  border:1px dashed rgba(148,163,184,.26);
-  background: rgba(11,16,32,.30);
-  padding:12px;
-  min-height:140px;
-  white-space: pre-wrap;
-  word-break: break-word;
-  color: var(--text);
-  line-height:1.55;
-}
-.hintbox{
-  margin-top:10px;
-  border-radius:18px;
-  border:1px solid rgba(148,163,184,.14);
-  background: rgba(11,16,32,.22);
-  padding:12px;
-}
-.hint-title{ font-weight:950; margin-bottom:6px; }
-.hint-text{ color:var(--muted); font-size:13px; line-height:1.55; }
+            <div class="field">
+              <label for="lift" data-i18n="fLift">¿Puedes levantar 50 lb?</label>
+              <select id="lift" name="lift" required>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
+              </select>
+              <div class="mini" data-i18n="fLiftH">Requisito del puesto.</div>
+            </div>
 
-/* Next step */
-.next{ margin-top:14px; }
-.next-card{
-  border-radius:var(--radius2);
-  border:1px solid rgba(59,130,246,.20);
-  background: linear-gradient(180deg, rgba(59,130,246,.10), rgba(2,6,23,.18));
-  padding:16px;
-}
-.next-title{ font-weight:950; font-size:16px; }
-.next-text{ margin:8px 0 0; color:var(--muted); line-height:1.6; }
-.next-actions{ margin-top:12px; display:grid; gap:10px; }
+            <div class="field">
+              <label for="whExp" data-i18n="fWhExp">¿Experiencia en warehouse?</label>
+              <select id="whExp" name="whExp" required>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
+              </select>
+            </div>
 
-a[aria-disabled="true"]{
-  pointer-events:none;
-  filter:saturate(.2) brightness(.9);
-  opacity:.65;
-}
+            <div class="field" id="expYearsWrap" hidden>
+              <label for="expYears" data-i18n="fYears">Años de experiencia (0–20)</label>
+              <input id="expYears" name="expYears" type="number" inputmode="numeric" min="0" max="20" step="1" />
+            </div>
 
-/* Footer */
-.footer{ padding:26px 0 34px; }
-.footer-row{
-  border-top:1px solid var(--line2);
-  padding-top:18px;
-  display:flex;
-  flex-direction:column;
-  gap:10px;
-}
-.privacy{ color:var(--muted); line-height:1.6; }
-.foot-contact{ display:flex; align-items:center; gap:10px; color:var(--muted2); font-size:13px; }
-.mail{ color: rgba(251,191,36,.95); font-weight:950; text-decoration:none; }
-.mail:hover{ text-decoration:underline; }
-.dotsep{ opacity:.7; }
+            <div class="field">
+              <label for="shift" data-i18n="fShift">Turno</label>
+              <select id="shift" name="shift" required>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Mañana" data-i18n="shiftMorning">Mañana</option>
+                <option value="Tarde" data-i18n="shiftEvening">Tarde</option>
+                <option value="Noche" data-i18n="shiftNight">Noche</option>
+                <option value="Cualquiera" data-i18n="shiftAny">Cualquiera</option>
+              </select>
+            </div>
 
-/* Desktop */
-@media (min-width: 860px){
-  .hero-card{
-    grid-template-columns: 1.35fr .65fr;
-    align-items:start;
-    padding:24px;
-  }
-  .facts{ grid-template-columns: 1fr 1fr; }
-  .cards{ grid-template-columns: 1fr 1fr; }
-  .grid{ grid-template-columns: 1fr 1fr; }
-  .actions{ grid-template-columns: 1.2fr 1fr .7fr; align-items:center; }
-  .footer-row{ flex-direction:row; align-items:center; justify-content:space-between; }
-}
+            <div class="field">
+              <label for="weekends" data-i18n="fWeekends">¿Puedes trabajar fines de semana?</label>
+              <select id="weekends" name="weekends" required>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Sí" data-i18n="optYes">Sí</option>
+                <option value="No" data-i18n="optNo">No</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="start" data-i18n="fStart">Inicio</label>
+              <select id="start" name="start" required>
+                <option value="" data-i18n="optChoose">Selecciona</option>
+                <option value="Inmediato" data-i18n="startNow">Inmediato</option>
+                <option value="1 semana" data-i18n="start1w">1 semana</option>
+                <option value="2 semanas" data-i18n="start2w">2 semanas</option>
+                <option value="1 mes" data-i18n="start1m">1 mes</option>
+              </select>
+            </div>
+
+            <div class="field field-full">
+              <label for="notes" data-i18n="fNotes">Notas (opcional)</label>
+              <textarea id="notes" name="notes" maxlength="400" rows="4"></textarea>
+              <div class="count">
+                <span class="mini" data-i18n="notesH">Máximo 400 caracteres.</span>
+                <span class="mono" id="notesCounter">0/400</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="button" class="btn btn-primary" id="btnGenerate" data-i18n="btnEmail">Generar Email</button>
+            <button type="button" class="btn btn-secondary" id="btnCopy" data-i18n="btnCopy">Copiar solicitud</button>
+            <button type="reset" class="btn btn-ghost" id="btnReset" data-i18n="btnReset">Limpiar</button>
+          </div>
+
+          <div class="fine" data-i18n="requiredNote">* Campos obligatorios.</div>
+        </form>
+
+        <section class="summary" aria-label="Application summary">
+          <div class="summary-head">
+            <h3 class="h3" data-i18n="sumTitle">Resumen de tu solicitud</h3>
+            <p class="sub" data-i18n="sumSub">Revisa antes de enviar.</p>
+          </div>
+
+          <pre id="summaryText" class="summary-box">Completa el formulario para ver el resumen.</pre>
+
+          <div class="hintbox">
+            <div class="hint-title" data-i18n="tipTitle">Tip</div>
+            <div class="hint-text" data-i18n="tipText">
+              Si “Generar Email” no abre tu app, usa “Copiar solicitud” y pégala en un email.
+            </div>
+          </div>
+        </section>
+
+        <!-- NEXT STEP: HOUSING PAYMENT -->
+        <section class="next" id="housing">
+          <div class="next-card">
+            <div class="next-title" data-i18n="payTitle">Siguiente paso: pagar 1ª semana de hospedaje</div>
+            <p class="next-text" data-i18n="payText">
+              Se habilita cuando la solicitud está completa y cumples requisitos (18+ y 50 lb).
+            </p>
+
+            <div class="next-actions">
+              <a class="btn btn-primary" id="btnHousing" href="#" target="_blank" rel="noopener" aria-disabled="true" data-i18n="payBtn">
+                Continuar a pago
+              </a>
+              <div class="mini" id="housingNote" data-i18n="payNote">
+                Configura la URL de pago en script.js.
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <div class="privacy" data-i18n="privacy">
+        Tu información solo se usará para contactarte sobre esta vacante.
+      </div>
+
+      <div class="foot-contact">
+        <a class="mail" href="mailto:sunpcorporation@gmail.com">sunpcorporation@gmail.com</a>
+        <span class="dotsep">•</span>
+        <span class="mono">© <span id="year"></span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
