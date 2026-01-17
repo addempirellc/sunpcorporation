@@ -1,11 +1,15 @@
-# Warehouse Hiring Single-Page (ES/EN) — GitHub Pages (/docs)
+# Warehouse Hiring — Single Page (ES/EN) — GitHub Pages (/docs)
 
-Sitio single-page (HTML/CSS/JS) para recibir aplicaciones a **Warehouse Associate / Warehouse Worker** en **Nashville, TN**.
-- Sin frameworks
-- Sin librerías externas
-- Sin backend
-- El formulario **no envía datos**: genera un email `mailto:` y permite copiar la solicitud.
+Single-page website (HTML/CSS/JS) to collect applications for **Warehouse Associate / Warehouse Worker** in **Nashville, TN**.
 
-## Estructura
-Coloca estos archivos así:
+✅ No frameworks  
+✅ No external libraries  
+✅ No backend  
+✅ Form does not submit to a server  
+✅ Generates `mailto:` email + Copy application  
+✅ Language switch is **not floating** (in header) and switches the whole page
+
+---
+
+## Folder structure (required for GitHub Pages /docs)
 
